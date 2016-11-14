@@ -1,7 +1,10 @@
-/*
-Copyright (c) 2003-2016, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.md or http://ckeditor.com/license
-*/
+* {
+	margin:0px;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
 
 body
 {
@@ -15,7 +18,7 @@ body
 	/* Remove the background color to make it transparent */
 	background-color: #fff;
 
-	margin: 20px;
+	margin: 0px;
 }
 
 .cke_editable
@@ -51,10 +54,25 @@ blockquote
 	border-right-width: 5px;
 }
 
-a
-{
-	color: #0782C1;
+td, th {
+	padding:0px;
 }
+
+a {
+	color: #0782C1;
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
 
 ol,ul,dl
 {
@@ -64,10 +82,24 @@ ol,ul,dl
 	padding: 0 40px;
 }
 
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
 h1,h2,h3,h4,h5,h6
 {
 	font-weight: normal;
 	line-height: 1.2;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
 }
 
 hr
@@ -98,6 +130,31 @@ pre
 	word-wrap: break-word; /* IE7 */
 	-moz-tab-size: 4;
 	tab-size: 4;
+}
+
+img {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
 }
 
 .marker
@@ -132,4 +189,15 @@ a > img {
 	margin: 1px;
 	border: none;
 	outline: 1px solid #0782C1;
+}
+
+.seyes-content {
+	font-family: CursiveCustom;
+  background-origin: border-box;
+  background-image: url('/data/seyes2.png');
+  background-size: 24px;
+  background-position-y: 0px;
+  line-height: 25px;
+  font-size: 22px;
+  padding-top: 9px;
 }
