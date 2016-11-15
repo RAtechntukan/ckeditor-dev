@@ -16,7 +16,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// Define changes to default configuration here. For example:
 	config.language = 'fr';
 	// config.uiColor = '#AADC6E';
-  config.filebrowserImageBrowseUrl = config.filebrowserUploadUrl = '/api/cke/file';
+  config.filebrowserImageBrowseUrl = '/import.php'; //config.filebrowserUploadUrl = 
 	config.uploadUrl = '/api/cke/file';
 	config.contentsCss = ['/styles/nomin/fonts.css', '/scripts/vendor/ckeditor_dev/contents.css'];
 	config.skin = 'office2013';
