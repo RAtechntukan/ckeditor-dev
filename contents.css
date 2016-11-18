@@ -191,6 +191,10 @@ a > img {
 	outline: 1px solid #0782C1;
 }
 
+p {
+	margin: 0 0 10px;
+}
+
 .seyes-content {
 	font-family: CursiveCustom;
   background-origin: border-box;
