@@ -10,16 +10,19 @@
 			quickClass = conf.qtClass || '',
 			quickCellPadding = conf.qtCellPadding || '1',
 			quickCellSpacing = conf.qtCellSpacing || '1',
-			quickWidth = conf.qtWidth || '500px',
+			quickWidth = conf.qtWidth || '478px',
 			quickPreviewSize = conf.qtPreviewSize || '14px',
 			quickPreviewBorder = conf.qtPreviewBorder || '1px solid #aaa',
 			quickPreviewBackground = conf.qtPreviewBackground || '#e5e5e5';
 
+			console.log("conf", conf);
 		function makeElement( name ) {
 			return new CKEDITOR.dom.element( name, editor.document );
 		}
 
 		function insertTable( rowCount, columnCount ) {
+			quickWidth = conf.qtWidth || '478px';
+
 			var table = makeElement( 'table' );
 			var tbody = table.append( makeElement( 'tbody' ) );
 
