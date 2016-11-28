@@ -5,22 +5,19 @@
 abbr[title] {
   border-bottom: 1px dotted;
 }
-
+/*
 body
 {
-	/* Font */
 	font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
 	font-size: 12px;
 
-	/* Text color */
 	color: #333;
 
-	/* Remove the background color to make it transparent */
 	background-color: #fff;
 
 	margin: 0px;
 }
-
+*/
 .cke_editable
 {
 	font-size: 13px;

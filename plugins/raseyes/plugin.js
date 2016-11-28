@@ -12,7 +12,7 @@ CKEDITOR.plugins.add( 'raseyes', {
           editables: {
               content: {
                   selector: '.seyes-content',
-                  allowedContent: 'br strong em'
+                  allowedContent: 'br strong em s u span{color}'
               }
           },
           allowedContent:'p(!seyes-content)',
