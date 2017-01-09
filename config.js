@@ -5,7 +5,11 @@
  */
 
 CKEDITOR.editorConfig = function( config ) {
-
+	config.enterMode = CKEDITOR.ENTER_BR;
+	config.shiftEnterMode = CKEDITOR.ENTER_BR;
+	 CKEDITOR.config.autoParagraph = false;
+	 CKEDITOR.config.fillEmptyBlocks = false;
+	 CKEDITOR.config.ignoreEmptyParagraph = true;
 	// %REMOVE_START%
 	// The configuration options below are needed when running CKEditor from source files.
 	config.plugins = 'dialogui,dialog,basicstyles,clipboard,button,panelbutton,panel,floatpanel,colorbutton,colordialog,menu,contextmenu,resize,toolbar,enterkey,entities,popup,filebrowser,find,floatingspace,listblock,richcombo,font,htmlwriter,image,indent,indentblock,indentlist,justify,list,liststyle,magicline,pastetext,pastefromword,removeformat,showborders,specialchar,tab,table,tabletools,undo,tableresize,lineutils,widget,filetools,notification,notificationaggregator,uploadwidget,uploadimage,quicktable';
@@ -16,7 +20,7 @@ CKEDITOR.editorConfig = function( config ) {
 	// Define changes to default configuration here. For example:
 	config.language = 'fr';
 	// config.uiColor = '#AADC6E';
-  config.filebrowserImageBrowseUrl = '/import.php'; //config.filebrowserUploadUrl = 
+  config.filebrowserImageBrowseUrl = '/import.php'; //config.filebrowserUploadUrl =
 	config.uploadUrl = '/api/cke/file';
 	config.contentsCss = ['/styles/nomin/fonts.css', '/scripts/vendor/ckeditor_dev/contents.css'];
 	config.skin = 'office2013';
